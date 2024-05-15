@@ -1,4 +1,4 @@
-
+Note: keep the below in mind, since the kernel issue was not solved by the commands below but rather through loading only required columns and changing the code a bit. (refer to very last code snippet in hw1)
 
 sudo apt update    # Fetches the list of available updates
 sudo apt upgrade   # Installs some updates; does not remove packages
