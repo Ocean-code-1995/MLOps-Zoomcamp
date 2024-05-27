@@ -15,3 +15,5 @@ dest_path
 # artifacts
 artifacts
 mlartifacts
+
+.DS_Store
