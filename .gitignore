@@ -1,0 +1,17 @@
+# data dirs
+data
+DATA
+
+#--dest_path
+dest_path
+# exclude all files ending with csv, parquet in gitignore:
+*.csv
+*.parquet
+*.db
+*.pkl
+# exclude all hidden files in gitignore:
+.*
+
+# artifacts
+artifacts
+mlartifacts
