@@ -1,3 +1,7 @@
+# keys
+keys
+*.json
+
 # data dirs
 data
 DATA
@@ -17,3 +21,6 @@ artifacts
 mlartifacts
 
 .DS_Store
+
+# start server command
+scenario3-start-server.txt

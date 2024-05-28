@@ -1,4 +1,5 @@
 mlflow
+psycopg2-binary
 jupyter
 scikit-learn
 pandas
