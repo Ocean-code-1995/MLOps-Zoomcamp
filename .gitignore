@@ -19,6 +19,7 @@ dest_path
 # artifacts
 artifacts
 mlartifacts
+mlruns
 
 .DS_Store
 
