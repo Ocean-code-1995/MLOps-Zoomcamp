@@ -61,9 +61,9 @@ run:
   python test.py
   ```
 
+  
 
 ## How to become independent from tracking server
-
 in predict.py set "   RUN_ID = os.getenv('RUN_ID')   "
 
 ```bash
