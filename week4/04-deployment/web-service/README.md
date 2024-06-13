@@ -97,8 +97,3 @@ docker build -t ride-duration-prediction-service:v1 .
 ```bash
 docker run -it --rm -p 9696:9696  ride-duration-prediction-service:v1
 ```
-
-
-# MLOps Zoomcamp 4.3 - Web-services: Getting the models from the model registry (MLflow)
----
-
