@@ -69,6 +69,7 @@ python test.py
 
 1) Development Testing:
 - 1st terminal:
+
 ```bash
 python predict.py
 ```
