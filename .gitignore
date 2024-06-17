@@ -13,6 +13,7 @@ dest_path
 *.parquet
 *.db
 *.pkl
+*.bin
 # exclude all hidden files in gitignore:
 .*
 
