@@ -39,6 +39,7 @@ raw_data = pd.read_parquet('data/green_tripdata_2022-02.parquet')
 begin = datetime.datetime(2022, 2, 1, 0, 0)
 num_features = ['passenger_count', 'trip_distance', 'fare_amount', 'total_amount']
 cat_features = ['PULocationID', 'DOLocationID']
+
 column_mapping = ColumnMapping(
     prediction='prediction',
     numerical_features=num_features,
@@ -74,8 +75,8 @@ def calculate_metrics_postgresql(curr, i):
 
 	result = report.as_dict()
 
-	prediction_drift = result['metrics'][0]['result']['drift_score']
-	num_drifted_columns = result['metrics'][1]['result']['number_of_drifted_columns']
+	prediction_drift     = result['metrics'][0]['result']['drift_score']
+	num_drifted_columns  = result['metrics'][1]['result']['number_of_drifted_columns']
 	share_missing_values = result['metrics'][2]['result']['current']['share_of_missing_values']
 
 	curr.execute(
@@ -99,6 +100,8 @@ def batch_monitoring_backfill():
 			while last_send < new_send:
 				last_send = last_send + datetime.timedelta(seconds=10)
 			logging.info("data sent")
+
+
 
 if __name__ == '__main__':
 	batch_monitoring_backfill()

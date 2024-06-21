@@ -111,7 +111,7 @@ Note: all actions expected to be executed in repo folder.
 
 To start all required services, execute:
 ```bash
-docker-compose up
+docker-compose up --build
 ```
 
 It will start following services:
