@@ -148,3 +148,17 @@ To stop all services, execute:
 ```bash
 docker-compose down
 ```
+
+
+### ***`NOTE`***
+-> After having run the python script, open grafana, test the data base connection under data sources and then go create dashboard and the following sql statement:
+```sql
+SELECT
+  "timestamp" AS time,
+  "prediction_drift" AS value
+FROM
+  dummy_metrics
+ORDER BY
+  time
+```
+Finally, select appropriatre date range and voila! 
